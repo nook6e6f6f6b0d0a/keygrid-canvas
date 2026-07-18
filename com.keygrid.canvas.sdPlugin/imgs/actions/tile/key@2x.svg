@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+  <rect width="144" height="144" rx="16" fill="#06080c"/>
+  <rect x="14" y="14" width="116" height="116" rx="14" fill="#101722" stroke="#46f6d6" stroke-width="6"/>
+  <path d="M28 102l28-48 22 20 38-50" fill="none" stroke="#ffcc4d" stroke-width="12"/>
+  <text x="72" y="122" text-anchor="middle" fill="#f7fbff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">CANVAS</text>
+</svg>

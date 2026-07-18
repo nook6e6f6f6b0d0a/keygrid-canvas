@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "UUID": "com.keygrid.canvas",
+  "Name": "KeyGrid Canvas",
+  "Version": "0.1.0.0",
+  "Author": "nook6e6f6f6b0d0a",
+  "Description": "Turns every Stream Deck key into one programmable tiled canvas.",
+  "Category": "KeyGrid Canvas",
+  "Icon": "imgs/plugin-icon",
+  "CodePath": "bin/plugin/plugin.js",
+  "URL": "https://github.com/nook6e6f6f6b0d0a/keygrid-canvas",
+  "SupportURL": "https://github.com/nook6e6f6f6b0d0a/keygrid-canvas/issues",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "Nodejs": {
+    "Version": "24",
+    "Debug": "disabled"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "13"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Actions": [
+    {
+      "UUID": "com.keygrid.canvas.tile",
+      "Name": "Canvas Tile",
+      "Icon": "imgs/actions/tile/icon",
+      "Tooltip": "Place Canvas Tile on every key to form one shared canvas. Press any key to change scenes.",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/actions/tile/key",
+          "Title": ""
+        }
+      ]
+    }
+  ]
+}

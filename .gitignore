@@ -1,0 +1,13 @@
+node_modules/
+.test-dist/
+.preview-dist/
+dist/
+com.keygrid.canvas.sdPlugin/bin/*
+!com.keygrid.canvas.sdPlugin/bin/.gitkeep
+docs/assets/*-tiles.html
+docs/assets/*-deck.svg
+!docs/assets/xl-signal-deck.svg
+*.log
+*.tgz
+.DS_Store
+Thumbs.db

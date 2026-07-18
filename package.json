@@ -1,0 +1,40 @@
+{
+  "name": "keygrid-canvas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "One programmable canvas across every Stream Deck key.",
+  "type": "module",
+  "license": "MIT",
+  "author": "nook6e6f6f6b0d0a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nook6e6f6f6b0d0a/keygrid-canvas.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test \".test-dist/tests/*.test.js\"",
+    "preview": "tsc -p tsconfig.preview.json && node .preview-dist/tools/export-preview.js",
+    "validate": "streamdeck validate com.keygrid.canvas.sdPlugin --no-update-check",
+    "bundle": "streamdeck pack com.keygrid.canvas.sdPlugin --output dist --force --no-update-check",
+    "release:check": "pnpm check && pnpm test && pnpm build && pnpm preview && pnpm validate && pnpm bundle"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "2.1.0"
+  },
+  "devDependencies": {
+    "@elgato/cli": "1.7.4",
+    "@rollup/plugin-commonjs": "29.0.3",
+    "@rollup/plugin-node-resolve": "16.0.3",
+    "@rollup/plugin-terser": "1.0.0",
+    "@rollup/plugin-typescript": "12.3.0",
+    "@types/node": "24.10.4",
+    "rollup": "4.62.2",
+    "tslib": "2.8.1",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.12.1"
+}

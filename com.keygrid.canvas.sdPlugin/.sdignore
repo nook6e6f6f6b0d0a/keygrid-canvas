@@ -1,0 +1,6 @@
+bin/*
+!bin/plugin/
+bin/plugin/*
+!bin/plugin/plugin.js
+!bin/plugin/package.json
+logs/
