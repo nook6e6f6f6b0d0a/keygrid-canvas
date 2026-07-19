@@ -8,7 +8,7 @@ until the physical-device and organization-name checks at the end are complete.
 - Product type: Stream Deck plugin
 - Name: KeyGrid Canvas
 - Price: Free
-- Version: 0.1.0
+- Version: 0.1.1
 - Primary category: Select the closest available productivity or utility category
 - Supported systems: Windows 10 or newer; macOS 13 or newer
 - Requirement: Stream Deck 7.1 or newer
@@ -56,8 +56,9 @@ keyword block to the product description.
 
 Initial public alpha. Includes Signal, Clock, Spectrum, and Alignment scenes;
 automatic keypad-grid detection; coordinated scene changes from any Canvas
-Tile key; cached tile updates; Windows and macOS support; and fully local
-operation with no account, cloud service, or telemetry.
+Tile key; cached tile updates; corrected Stream Deck action-list category
+icons; Windows and macOS support; and fully local operation with no account,
+cloud service, or telemetry.
 
 ## Upload files
 
@@ -76,8 +77,8 @@ operation with no account, cloud service, or telemetry.
   manifest Author field and rebuild the package before uploading.
 - [ ] Confirm **KeyGrid Canvas** is the permanent product name.
 - [ ] Confirm **Free** is the intended monetization option.
-- [ ] Install the exact packaged file on at least one physical Stream Deck.
-- [ ] Fill every key on one page with Canvas Tile and verify all four scenes.
+- [x] Install the exact packaged file on at least one physical Stream Deck.
+- [x] Fill every key on one page with Canvas Tile and verify all four scenes.
 - [ ] Confirm animation remains responsive and the plugin stops cleanly when
   the page is left or Stream Deck closes.
 - [ ] Review the Maker Agreement in the organization's Maker Console settings.

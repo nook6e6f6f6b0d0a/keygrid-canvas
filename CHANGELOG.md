@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 - 2026-07-18
+
+- Adds the required action-list category icons for Stream Deck 7.5 installs.
+- Adds regression coverage for category metadata and icon files.
+
 ## 0.1.0 - 2026-07-17
 
 - First public alpha.
