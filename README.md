@@ -8,7 +8,7 @@ KeyGrid Canvas renders one SVG scene at the full size of your key grid, slices
 the scene into per-key images, and presents those images as one coordinated
 display. Press any key to cycle through the included gallery scenes.
 
-**[Download KeyGrid Canvas 0.1.0](https://github.com/nook6e6f6f6b0d0a/keygrid-canvas/releases/download/v0.1.0/com.keygrid.canvas.streamDeckPlugin)**
+**[Download the latest KeyGrid Canvas release](https://github.com/nook6e6f6f6b0d0a/keygrid-canvas/releases/latest/download/com.keygrid.canvas.streamDeckPlugin)**
 
 ![KeyGrid Canvas cycling scenes across a Stream Deck XL](docs/assets/keygrid-canvas-demo.gif)
 
