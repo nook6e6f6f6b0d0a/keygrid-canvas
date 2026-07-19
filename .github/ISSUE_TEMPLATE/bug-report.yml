@@ -1,0 +1,73 @@
+name: Bug report
+description: Report a reproducible problem with KeyGrid Canvas.
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: device
+    attributes:
+      label: Stream Deck model
+      options:
+        - Stream Deck Mini
+        - Stream Deck or MK.2
+        - Stream Deck Neo
+        - Stream Deck +
+        - Stream Deck XL
+        - Other keypad device
+    validations:
+      required: true
+  - type: input
+    id: software-version
+    attributes:
+      label: Stream Deck software version
+      placeholder: 7.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: KeyGrid Canvas version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the page layout and which scene was active.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, video, or relevant logs
+      description: Remove credentials, usernames, and unrelated personal data.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I filled every key on the page with Canvas Tile before testing.
+          required: true
+        - label: I checked that this issue has not already been reported.
+          required: true

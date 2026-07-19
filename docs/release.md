@@ -9,5 +9,16 @@
    integrations.
 7. Tag the verified commit and attach the generated `.streamDeckPlugin` file.
 
-Marketplace submission is a separate review through Elgato Maker Console. A
-GitHub release is not a Marketplace publication.
+## Marketplace handoff
+
+1. Review `marketplace/submission.md` and confirm the product name, free price,
+   description, links, and release notes.
+2. Confirm the Maker organization name matches `Author` in `manifest.json`.
+3. Upload `marketplace/app-icon.png`, `marketplace/thumbnail.png`, and all three
+   `marketplace/gallery-*.png` images.
+4. Re-test the exact uploaded plugin file on physical hardware.
+5. Create the product in Elgato Maker Console and submit it for review.
+
+Marketplace submission is separate from a GitHub release. Do not mark the
+physical-device check complete until someone has installed and used the exact
+package on a supported Stream Deck.
