@@ -1,0 +1,49 @@
+name: Scene proposal
+description: Propose a focused scene for the shared key-grid canvas.
+title: "[Scene] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Scene name
+      placeholder: A short, memorable name
+    validations:
+      required: true
+  - type: textarea
+    id: concept
+    attributes:
+      label: What should the whole grid show?
+      description: Describe the composition and why it benefits from spanning keys.
+    validations:
+      required: true
+  - type: textarea
+    id: interaction
+    attributes:
+      label: Interaction and motion
+      description: Explain what changes over time or when a key is pressed.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Sketch or reference
+      description: Attach an original sketch or material you have permission to use.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Project fit
+      options:
+        - label: The scene can render locally without accounts, network access, or shell commands.
+          required: true
+        - label: I understand the first alpha accepts SVG renderer scenes only.
+          required: true
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Would you like to implement it?
+      options:
+        - Yes, I would like guidance
+        - Maybe
+        - No, this is an idea for someone else
+    validations:
+      required: true
